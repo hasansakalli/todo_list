@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  background-color: rgba(3, 36, 63, 0.963);
+  color: rgb(244, 240, 236);
+  margin-top: 3em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container > * {
+  margin-bottom: 0.4rem;
+}
+.container {
+  border: 1px rgb(18, 18, 18);
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+#fontAw {
+  color: brown;
+  padding: 0.5em;
+  font-size: 14px;
+  cursor: pointer;
+}
+#fontAw:hover {
+  transform: scaleX(1.1);
+  color: rgb(101, 16, 146);
+}
+.paragraf {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.result {
+  display: grid;
+  background-color: none;
+  align-items: baseline;
+}
+.newClass {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+  background-color: rgb(247, 186, 105);
+  border: 1px solid black;
+  margin-bottom: 0.3em;
+  border: none;
+  padding-left: 0.5em;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.newButton {
+  background-color: transparent;
+  border: none;
+  color: chartreuse;
+}
+
+.newInput {
+}
+#inputText {
+  margin: 1em 0em 2em;
+  width: 18vw;
+  outline: none;
+  padding: 0.3em;
+  border-radius: 5px;
+  background-color: beige;
+  border: 1px solid gray;
+}
+
+#ekle,
+#sil {
+  background-color: brown;
+  border: none;
+  padding: 0.3em;
+  color: white;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#sil:hover {
+  background-color: rgba(165, 42, 42, 0.6);
+  transition: all 250ms;
+}
+#ekle {
+  background-color: darkgreen;
+}
+#ekle:hover {
+  background-color: rgba(0, 128, 0, 0.703);
+  transition: all 250ms;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+  }
+  #inputText {
+    width: 100%;
+  }
+}
