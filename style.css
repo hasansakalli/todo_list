@@ -118,8 +118,13 @@ h1 {
 @media (max-width: 768px) {
   .header {
     display: grid;
+    
+  }
+  .header>*{
+      margin-bottom: 0.5em;
   }
   #inputText {
     width: 100%;
   }
+
 }
